@@ -18,7 +18,8 @@ void loop()
     // If true, turn the LED on.
     if (pirSensor == HIGH)
     {
-         digitalWrite(12, HIGH);
+        digitalWrite(12, HIGH);
+        // Print the output to the console
         Serial.println("Movement detected");
     }
     else
@@ -27,6 +28,6 @@ void loop()
         Serial.println("No movement detected");
     }
   
-      // Delay a bit to improve simulation
-      delay(20);
+    // Delay a bit to improve simulation
+    delay(20);
 }

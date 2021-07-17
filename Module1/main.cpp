@@ -20,6 +20,7 @@ void loop()
   	if (pirSensor == HIGH)
     {
      	digitalWrite(12, HIGH);
+        // Print output to console
       	Serial.println("Movement detected");
     }
   	else

@@ -1,4 +1,5 @@
 // C++ code
+// Jesse Ludeman
 int pirSensor = 0;
 
 void setup()

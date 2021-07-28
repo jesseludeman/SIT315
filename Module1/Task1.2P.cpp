@@ -11,15 +11,15 @@ volatile uint8_t motion_state = LOW;
 
 void setup()
 {
-  	// PIR sensor.
-  	pinMode(pirSensor, INPUT);
-  	// Red LED.
-  	pinMode(led_PIN, OUTPUT);
+    // PIR sensor.
+    pinMode(pirSensor, INPUT);
+    // Red LED.
+    pinMode(led_PIN, OUTPUT);
     // Push button.
     pinMode(push_button, INPUT_PULLUP);
     // Attach the interrupts.
     attachInterrupt(digitalPinToInterrupt(pirSensor), motion_alert, HIGH);
-  	attachInterrupt(digitalPinToInterrupt(push_button), led_alert, HIGH);
+    attachInterrupt(digitalPinToInterrupt(push_button), led_alert, HIGH);
     Serial.begin(9600);
 }
 
